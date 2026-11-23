@@ -1,1 +1,287 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Royal Chess Clock</title>
+  <style>
+    :root {
+      --bg-primary: #0d0f12;
+      --bg-surface: #16191f;
+      --border-subtle: #262b34;
+      --gold-primary: #d4af37;
+      --gold-light: #f3e5ab;
+      --text-primary: #ffffff;
+      --text-secondary: #b0b6c2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      padding: 20px 16px 48px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0 28px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--gold-light);
+      text-transform: uppercase;
+    }
+
+    .card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .last-updated {
+      font-size: 0.75rem;
+      color: var(--gold-light);
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      color: var(--gold-primary);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight {
+      color: var(--gold-light);
+      font-weight: 700;
+    }
+
+    .bold {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.92rem;
+      margin-bottom: 10px;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+
+    .link-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 14px;
+      background-color: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--gold-primary);
+      border-radius: 8px;
+      color: var(--gold-light);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .link-btn:hover {
+      background-color: rgba(212, 175, 55, 0.22);
+    }
+
+    .email-link {
+      display: inline-block;
+      margin-top: 4px;
+      color: var(--gold-light);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .email-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+    </header>
+
+    <!-- Intro Card -->
+    <div class="card">
+      <div class="last-updated">Effective Date: November 2026</div>
+      <p>
+        Welcome to <span class="highlight">Royal Chess Clock</span>. We respect your privacy
+        and are committed to protecting any information associated with your use of our chess clock
+        and timer application. This Privacy Policy details how data is handled, stored, and utilized,
+        including our integration of third-party advertising partners like Google AdMob.
+      </p>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="card">
+      <h2>1. Zero Data Collection (100% Local &amp; Offline-First)</h2>
+      <p>
+        <span class="bold">We do NOT collect, transmit, sell, or store any personal data on external servers.</span>
+        Royal Chess Clock operates as a private, offline-first application. We do not require accounts, logins,
+        email addresses, phone numbers, contacts, or location access.
+      </p>
+      <p>
+        The following information is created during your use and is stored <span class="bold">strictly on your local device</span> (via AsyncStorage) and never leaves your phone:
+      </p>
+      <ul>
+        <li>
+          <span class="bold">Player Profiles &amp; Names:</span> Your chosen display names, avatar icons,
+          ELO ratings, and preferred board side.
+        </li>
+        <li>
+          <span class="bold">Match History &amp; Analytics:</span> Timestamps, move counts, winner
+          records, clock presets, and move think times.
+        </li>
+        <li>
+          <span class="bold">Preferences &amp; Audio Settings:</span> Sound profile selection, tactile
+          haptic switches, 10s warnings, and millisecond display options.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="card">
+      <h2>2. Google Mobile Ads (AdMob) &amp; Third Parties</h2>
+      <p>
+        To keep Royal Chess Clock free and accessible to chess players worldwide, we integrate
+        <span class="highlight">Google Mobile Ads (AdMob)</span> to serve advertisements (such
+        as banner ads).
+      </p>
+      <p>
+        Google AdMob and its advertising partners may collect and process certain device identifiers and
+        telemetry:
+      </p>
+      <ul>
+        <li>
+          <span class="bold">Advertising ID:</span> Google Advertising ID (GAID on Android) or
+          IDFA (on iOS) used for ad attribution and frequency capping.
+        </li>
+        <li>
+          <span class="bold">Device &amp; Network Information:</span> Device model, operating system
+          version, screen size, IP address, and general network connection state.
+        </li>
+        <li>
+          <span class="bold">Ad Performance Metrics:</span> Impressions, ad clicks, views, and
+          interaction telemetry to prevent invalid ad traffic and fraud.
+        </li>
+      </ul>
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" class="link-btn">
+        Learn how Google uses data from apps &rsaquo;
+      </a>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="card">
+      <h2>3. Data Retention &amp; Complete Data Deletion</h2>
+      <p>
+        Because 100% of game data is stored exclusively on your device, <span class="bold">we retain zero copies of your personal data on any server.</span>
+      </p>
+      <ul>
+        <li>
+          <span class="bold">Instant Data Deletion:</span> You can permanently erase all player
+          profiles, match history, and preferences at any time by going to your Android device settings
+          (Settings &rsaquo; Apps &rsaquo; Royal Chess Clock &rsaquo; Storage &amp; Cache &rsaquo; Clear Storage/Data), or by simply uninstalling
+          the application.
+        </li>
+        <li>
+          <span class="bold">Ad Personalization Controls:</span> You can opt out of personalized ads
+          or reset your Google Advertising ID on your Android device at any time (Settings &rsaquo; Google &rsaquo; Ads &rsaquo;
+          Reset or Delete Advertising ID).
+        </li>
+      </ul>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="card">
+      <h2>4. Children's Privacy (COPPA)</h2>
+      <p>
+        Our application is designed for general audiences and chess enthusiasts of all ages. We do not
+        knowingly collect personally identifiable information from children under the age of 13. If you
+        believe that personal information has been inadvertently collected, please contact us immediately.
+      </p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="card">
+      <h2>5. Security</h2>
+      <p>
+        We value your trust. All match statistics and custom configurations are stored locally on your
+        device. No sensitive personal information is stored or transmitted.
+      </p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="card">
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy periodically to reflect new app features, regulatory standards, or
+        ad network updates. Any revisions will be reflected on this page with an updated effective date.
+      </p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="card">
+      <h2>7. Contact Us</h2>
+      <p>
+        If you have questions, feedback, or concerns regarding this Privacy Policy or our data practices,
+        please reach out to us at:
+      </p>
+      <a href="mailto:praveen98852@gmail.com" class="email-link">praveen98852@gmail.com</a>
+    </div>
+  </div>
+
+</body>
+</html>
